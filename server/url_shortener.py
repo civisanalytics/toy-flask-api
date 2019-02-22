@@ -23,7 +23,7 @@ class UrlShortener(Resource):
 	@staticmethod
 	def _validate_url(url):
 		parts = urlparse.urlparse(url)
-		if not parts.scheme in ('http', 'https'):
+		if parts.scheme not in ('http', 'https'):
 			return make_response('Please enter valid url!', 400)
 
 	def _shorten_url(self, url):

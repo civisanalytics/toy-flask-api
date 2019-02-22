@@ -13,8 +13,8 @@ def create_app():
 	app.debug = True
 
 	logging.basicConfig(level=logging.INFO,
-                        format='%(asctime)-20s %(levelname)-6s %(message)s',
-                        datefmt='%m-%d-%Y %H:%M:%S')
+						format='%(asctime)-20s %(levelname)-6s %(message)s',
+						datefmt='%m-%d-%Y %H:%M:%S')
 	return app
 
 
